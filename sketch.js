@@ -52,7 +52,7 @@ function setup() {
 function draw() {
   
   background(bg1);  
-  if(mousePessedOver(start)){
+  if(mousePressedOver(start)){
     start.visible=false;
     sound.play();
   }
