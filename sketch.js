@@ -52,7 +52,7 @@ function setup() {
 function draw() {
   
   background(bg1);  
-  if(mousePressedOver(start)){
+  if(keyDown("s")){
     start.visible=false;
     sound.play();
   }
@@ -143,7 +143,7 @@ function draw() {
 
 function zombies(){
 
-  if(frameCount%20===0){
+  if(frameCount%40===0){
 
   zombie=createSprite(359,player.y, 50, 50);
   zombie.velocityX=random(4,8)+score/2;
