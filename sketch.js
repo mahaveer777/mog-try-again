@@ -52,7 +52,8 @@ function setup() {
 function draw() {
   
   background(bg1);  
-  if(keyDown("s")){
+ 
+    if(keyDown("s")){
     start.visible=false;
     sound.play();
   }
